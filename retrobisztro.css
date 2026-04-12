@@ -15,7 +15,7 @@ body {
 }
 
 
-.navbar,
+.header,
 header,
 footer {
     background: rgba(0, 0, 0, 0.6) !important; 
@@ -28,7 +28,7 @@ footer {
 }
 
 .box_shadow {
-    margin: 20px auto;
+    margin: 50px auto;
     padding: 15px;
     max-width: 900px;
     background: rgba(0, 0, 0, 0.7);
@@ -59,7 +59,7 @@ footer {
     background: rgba(255, 255, 255, 0.1) !important; 
     backdrop-filter: blur(10px) !important;       
     -webkit-backdrop-filter: blur(10px);
-    border: 0px solid rgba(255, 255, 255, 0.2) !important; 
+    border: 5px double rgba(255, 255, 255, 0.37) !important; 
     border-radius: 20px !important;
     overflow: hidden ;
     color: white !important;                    
@@ -85,4 +85,88 @@ footer {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     object-fit: cover; 
     
+}
+
+footer {
+    font-family: sans-serif;  
+    border-top: 10px double #a7a6a6;
+}
+
+footer p {
+    margin: 5px 0;             
+    font-size: 0.9rem;         
+}
+
+footer hr {
+    width: 100px;               
+    border-top: 3px dotted #faf8f8;
+    margin: 10px auto;
+}
+
+.custom-nav {
+    background: rgba(0, 0, 0, 0.5) !important; 
+    backdrop-filter: blur(8px);               
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 4px dotted rgba(10, 0, 0, 0.205);
+    padding: 10px 0;
+}
+
+
+.brand-text {
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+
+.custom-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    margin: 0 5px;
+}
+
+
+.custom-nav .nav-link:hover {
+    color: #ffcc00 !important; 
+    transform: translateY(-2px); /
+}
+
+
+.dropdown-menu {
+    background: rgba(30, 30, 30, 0.95);
+    border: 1px solid #444;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown-item:hover {
+    background-color: #ffcc00;
+    color: black;
+}
+
+.main-header {
+    padding: 40px 0 20px 0;
+    color: white;
+    text-align: center;
+}
+
+
+.main-header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+
+.tagline {
+    font-style: italic;
+    font-size: 1.2rem;
+    opacity: 0.8;
+    letter-spacing: 1px;
 }
