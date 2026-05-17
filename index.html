@@ -13,7 +13,11 @@
 <div class="main-content">
 
   <header class="main-header">
-    <div>
+    <div><div id="masodikGombTarolo" style="display: none; margin-top: 20px;">
+    <button id="nagyGomb" onclick="masodikGombKattintas()" class="kepes-gomb nagy-meret">
+        <img id="nagyKep" src="-/1.png" alt="Nagy gomb">
+    </button>
+</div>
         <h1>Menő Retró Bisztró</h1>
         <p class="tagline">Az első és az utolsó!</p>
     </div>
@@ -55,14 +59,15 @@
     
         <p> Jó napot vendégek!<br>
         Én és társaim itt vannak a szolgálatodra, mit keres ön?<br>
-        A Menübe ám minden található!
+        A Menübe ám minden található! <br><br>
+        Kapcsolat: +36 679 4242 | Nyitva: 9:00-21:00
       </p>
     </div>
 
     <div class="row row-cols-1 row-cols-md-3 g-5">
     <div class="col shadow blur">
       <div class="card">
-      <img src="npd.jpg" class="card-img card-img-top" alt="Avatar" >
+      <img src="npd.png" class="card-img card-img-top" alt="Avatar" >
       <div class="container">
         <h4><b>Nagy Patrik Dominik</b></h4>
         <p>Vezető Fejlesztő</p>
@@ -94,7 +99,14 @@
     </div>
   
   </div>
+<button id="kicsiGomb" onclick="elsoGombKattintas()" class="kepes-gomb kicsi-meret">
+    <img id="kicsiKep" src="-/question.png" alt="Kicsi gomb">
+    <audio id="hatterZene" src="-/--.mp3" loop></audio>
+</button>
 
+
+
+<audio id="kattintasHang" src="-/-.mp3"></audio>
     <footer class="mt-5 p-4 text-white text-center">
       <p>&copy; 2026ban minden jog fenntartva</p>
       <p>Szerzök: Nagy Patrik Dominik, Kígyóssy Boldizsár és Kovács Edvárd</p>
@@ -102,5 +114,67 @@
     </footer>
   
  
+
+
+
+
+<div id="welcome-box">
+        <h2>Üdvözlünk az éttermünkben!</h2>
+        <p>Készen állsz a rendelésre?</p>
+        <button onclick="bezar()">Belépés</button>
+    </div>
+
+
+
+
+
+
+    
+    <div id="overlay"></div>
+     <script>
+        window.onload = function() {
+            document.getElementById("welcome-box").style.display = "block"
+            document.getElementById("overlay").style.display = "block"
+        }
+        function bezar() {
+            document.getElementById("welcome-box").style.display = "none"
+            document.getElementById("overlay").style.display = "none"
+        }
+    </script>
+
+
+
+
+
+<script>
+    // 1. Amikor megnyomják a KICSI gombot
+    function elsoGombKattintas() {
+        // Megváltoztatjuk a kicsi gomb képét
+        document.getElementById("kicsiKep").src = "-/!.png";
+        
+        // Megjelenítjük a második (eddig rejtett) gombot
+        document.getElementById("masodikGombTarolo").style.display = "block";
+
+        // ELINDÍTJUK A FOLYAMATOS ZENÉT
+        var zene = document.getElementById("hatterZene");
+        zene.play();
+    }
+
+    // 2. Amikor megnyomják a felbukkanó NAGY gombot
+    function masodikGombKattintas() {
+        // Megváltoztatjuk a nagy gomb képét
+        document.getElementById("nagyKep").src = "-/2.png";
+        
+        // LEÁLLÍTJUK A FOLYAMATOS ZENÉT
+        var zene = document.getElementById("hatterZene");
+        zene.pause();         // Megállítja a zenét
+        zene.currentTime = 0; // Visszatekeri az elejére, biztos ami biztos
+        
+        // Elindítjuk a második gomb saját hangját/effektjét
+        var hang = document.getElementById("kattintasHang");
+        hang.currentTime = 0;
+        hang.play();
+    }
+</script>
 </body>
 </html>
