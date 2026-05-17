@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendelés - Retró Bisztró</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="retrobisztro.css"> 
+</head>
+<body>
+
+    <div class="container box_shadow m-auto p-5 text-center" style="max-width: 600px; color: #f1e4d0;">
+        <h1 class="mb-4" style="color: #ffcc00;">Béles Rendelés</h1>
+        <p class="mb-4">Kérlek, válaszd ki, hogy mekkora adagot kérsz!</p>
+        
+        <select id="belesTipus" class="form-select form-select-lg mb-4 mx-auto" style="max-width: 300px; cursor: pointer;">
+            <option value="turos">Kis adag (2 780 Ft)</option>
+            <option value="almas">Közepes adag (AKCIÓS!!! 3 000 Ft)</option>
+            <option value="cukros">Úristen very BIG adag (4 000 Ft)</option>
+        </select>
+    <p class="mb-4">Evőeszközök:</p>
+        <select id="belesTipus" class="form-select form-select-lg mb-4 mx-auto" style="max-width: 300px; cursor: pointer;">
+            <option value="nincs">Nincs semmi (5 000 000 Ft)</option>
+            <option value="cukor">Kanál [Papír sz*r] (ingyen)</option>
+            <option value="tejfol">Működőképes kanál (100 ft)</option>
+            <option value="sajt">XXl Fakanál (2 000 ft)</option>
+        </select>
+        <select id="belesTipus" class="form-select form-select-lg mb-4 mx-auto" style="max-width: 300px; cursor: pointer;">
+            <option value="nincs">Erős pisti (250 Ft)</option>
+            <option value="cukor">Erősebb pisti (300 Ft)</option>
+            <option value="tejfol">Só (50 ft)</option>
+            <option value="sajt"> Semmi (0 ft)</option>
+
+        <button onclick="sikeresRendeles()" class="btn btn-warning btn-lg button1 fw-bold px-5">
+            Megrendelem!
+        </button>
+        
+        <br>
+        <a href="Kaja3.html" class="btn btn-link mt-4 text-white">Vissza az oldalra</a>
+    </div>
+
+    <script>
+        function sikeresRendeles() {
+            
+            var kivalasztottGulyas = document.getElementById("belesTipus");
+            var GulyasSzoveg = kivalasztottGulyas.options[kivalasztottGulyas.selectedIndex].text;
+
+            
+            alert("A rendelés sikeresen meg lett rendelve!\n\nVálasztott termék: " + belesSzoveg + "\n\nHamarosan hozzuk a rendelésed!");
+        }
+    </script>
+
+</body>
+</html>
