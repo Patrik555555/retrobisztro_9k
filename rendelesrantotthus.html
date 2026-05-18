@@ -26,7 +26,7 @@
             <option value="kes">Fém kés(200 ft)</option>
         </select>
     <p class="mb-4">Köret választás</p>    
-        <select id="belesTipus" class="form-select form-select-lg mb-4 mx-auto" style="max-width: 300px; cursor: pointer;">
+        <select id="rantotthusTipus" class="form-select form-select-lg mb-4 mx-auto" style="max-width: 300px; cursor: pointer;">
             <option value="nincs">Nincs semmi</option>
             <option value="hasab">Hasábburgonya (500 ft)</option>
             <option value="rizs">Rizs (300 ft)</option>
@@ -44,7 +44,7 @@
     <script>
         function sikeresRendeles() {
             
-            var kivalasztottBeles = document.getElementById("belesTipus");
+            var kivalasztottBeles = document.getElementById("rantotthusTipus");
             var belesSzoveg = kivalasztottBeles.options[kivalasztottBeles.selectedIndex].text;
 
             

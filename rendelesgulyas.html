@@ -13,7 +13,7 @@
         <h1 class="mb-4" style="color: #ffcc00;">Gulyás leves rendelése</h1>
         <p class="mb-4">Kérlek, válaszd ki, hogy mekkora adagot kérsz!</p>
         
-        <select id="belesTipus" class="form-select form-select-lg mb-4 mx-auto" style="max-width: 300px; cursor: pointer;">
+        <select id="gulyaslevesTipus" class="form-select form-select-lg mb-4 mx-auto" style="max-width: 300px; cursor: pointer;">
             <option value="turos">Kis adag (2 780 Ft)</option>
             <option value="almas">Közepes adag (AKCIÓS!!! 3 000 Ft)</option>
             <option value="cukros">Úristen very BIG adag (4 000 Ft)</option>
@@ -25,6 +25,7 @@
             <option value="tejfol">Működőképes kanál (100 ft)</option>
             <option value="sajt">XXl Fakanál (2 000 ft)</option>
         </select>
+        <p class="mb-4">Szószok:</p>
         <select id="belesTipus" class="form-select form-select-lg mb-4 mx-auto" style="max-width: 300px; cursor: pointer;">
             <option value="nincs">Erős pisti (250 Ft)</option>
             <option value="cukor">Erősebb pisti (300 Ft)</option>
@@ -42,8 +43,9 @@
     <script>
         function sikeresRendeles() {
             
-            var kivalasztottBeles = document.getElementById("belesTipus");
-            var BelesSzoveg = kivalasztottBeles.options[kivalasztottBeles.selectedIndex].text;
+            var kivalasztottBeles = document.getElementById("gulyaslevesTipus");
+            var belesSzoveg = kivalasztottBeles.options[kivalasztottBeles.selectedIndex].text;
+
 
             
             alert("A rendelés sikeresen meg lett rendelve!\n\nVálasztott termék: " + belesSzoveg + "\n\nHamarosan hozzuk a rendelésed!");
