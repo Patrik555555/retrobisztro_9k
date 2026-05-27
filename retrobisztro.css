@@ -266,6 +266,49 @@ hr {
     color: #3b2818;
 }
 
+/* rántott hús cuccaim */
+
+.rantott_shadow1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 70px auto;
+    padding: 15px;
+    max-width: 900px;
+    background: rgba(34, 139, 34, 0.75);
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #0f3d0f, 0 0 40px #0f3d0f;
+    backdrop-filter: blur(2px);
+}
+
+.rantott_box1 {
+    background: rgba(50, 205, 50, 0.8);
+    margin: 50px auto;
+    max-width: 120px;
+    border-radius: 15px;
+    padding: 7px;
+    color: #103810;
+    box-shadow: 0 0 20px #0f3d0f, 0 0 40px #0f3d0f;
+}
+
+.rantott_kepek {
+    width: 400px;
+    margin-left: 31px;
+    float: left;
+    border-radius: 15px;
+    border: 5px solid #0f3d0f;
+    box-shadow: 0 0 20px #0f3d0f, 0 0 40px #0f3d0f;
+    transition: transform 0.3s ease-in;
+}
+
+.rantott_kepek:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #0f3d0f, 0 0 40px #0f3d0f;
+}
+
+.rantott_col {
+    color: #103810;
+}
+
 
 /* welcome cucc */
 
