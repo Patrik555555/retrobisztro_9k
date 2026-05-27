@@ -46,7 +46,7 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="Kaja1.html">Béles</a></li>
             <li><a class="dropdown-item" href="Kaja2.html">Rántott hús</a></li>
-            <li><a class="dropdown-item" href="Kaja3.html">Gulyás leves</a></li>
+            <li><a class="dropdown-item" href="Kaja3.html">ovács Edvárd szakács fogásai</a></li>
           </ul>
               </li>
               
@@ -149,28 +149,28 @@
 <script>
     // 1. Amikor megnyomják a KICSI gombot
     function elsoGombKattintas() {
-        // Megváltoztatjuk a kicsi gomb képét
+        // Megváltoztatja a kicsi gomb képe
         document.getElementById("kicsiKep").src = "-/!.png";
         
-        // Megjelenítjük a második (eddig rejtett) gombot
+        // Megjeleníti a második (eddig rejtett) gombot
         document.getElementById("masodikGombTarolo").style.display = "block";
 
-        // ELINDÍTJUK A FOLYAMATOS ZENÉT
+        // ELINDÍTJA A FOLYAMATOS ZENÉT
         var zene = document.getElementById("hatterZene");
         zene.play();
     }
 
     // 2. Amikor megnyomják a felbukkanó NAGY gombot
     function masodikGombKattintas() {
-        // Megváltoztatjuk a nagy gomb képét
+        // Megváltoztatja a nagy gomb képét
         document.getElementById("nagyKep").src = "-/2.png";
         
-        // LEÁLLÍTJUK A FOLYAMATOS ZENÉT
+        // LEÁLLÍTJA A FOLYAMATOS ZENÉT
         var zene = document.getElementById("hatterZene");
         zene.pause();         // Megállítja a zenét
         zene.currentTime = 0; // Visszatekeri az elejére, biztos ami biztos
         
-        // Elindítjuk a második gomb saját hangját/effektjét
+        // Elindítja a második gomb saját hangját/effektjét
         var hang = document.getElementById("kattintasHang");
         hang.currentTime = 0;
         hang.play();
