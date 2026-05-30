@@ -11,26 +11,25 @@
 
     <div class="container box_shadow m-auto p-5 text-center" style="max-width: 600px; color: #f1e4d0;">
         <h1 class="mb-4" style="color: #ffcc00;">Gulyás leves rendelése</h1>
-        <p class="mb-4">Kérlek, válaszd ki, hogy mekkora adagot kérsz!</p>
+        <p class="mb-4">Kérlek, válaszd ki, hogy mekkora adagot/méretet kérsz!</p>
         
         <select id="gulyaslevesTipus" class="form-select form-select-lg mb-4 mx-auto" style="max-width: 300px; cursor: pointer;">
-            <option value="turos">Kis adag (2 780 Ft)</option>
-            <option value="almas">Közepes adag (AKCIÓS!!! 3 000 Ft)</option>
-            <option value="cukros">Úristen very BIG adag (4 000 Ft)</option>
+            <option value="turos">Kis adag/méret </option>
+            <option value="almas">Közepes adag/méret </option>
+            <option value="cukros">Úristen very BIG adag/méret </option>
         </select>
     <p class="mb-4">Evőeszközök:</p>
         <select id="belesTipus" class="form-select form-select-lg mb-4 mx-auto" style="max-width: 300px; cursor: pointer;">
-            <option value="nincs">Nincs semmi (000 Ft)</option>
+            <option value="nincs">Semmi</option>
             <option value="cukor">Kanál [Papír] (ingyen)</option>
-            <option value="tejfol">Működőképes kanál (100 ft)</option>
-            <option value="sajt">XXl Fakanál (2 000 ft)</option>
-        </select>
-        <p class="mb-4">Szószok:</p>
+            <option value="tejfol">Fém kanál (+100 ft)</option>
+            <option value="sajt"> Fém Villa (+100 ft)</option>+
+        </select>   
+        <p class="mb-4">Fűszerek:</p>
         <select id="belesTipus" class="form-select form-select-lg mb-4 mx-auto" style="max-width: 300px; cursor: pointer;">
-            <option value="nincs">Erős pisti (250 Ft)</option>
-            <option value="cukor">Erősebb pisti (300 Ft)</option>
-            <option value="tejfol">Só (50 ft)</option>
-            <option value="sajt"> Semmi (0 ft)</option>
+            <option value="nincs">Semmi</option>
+            <option value="cukor">Só (50 Ft)</option>
+            <option value="tejfol">Bors (50 ft)</option>
         </select>
         <button onclick="sikeresRendeles()" class="btn btn-warning btn-lg button1 fw-bold px-5">
             Megrendelem!
