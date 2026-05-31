@@ -229,7 +229,6 @@ footer hr {
 .beleskepek {
  
     width: 400px;
-    margin-left: 31px;
     float: left;
     border-radius: 15px;
     border: 5px solid #442d03;
@@ -265,6 +264,61 @@ box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 hr {
     color: #3b2818;
 }
+
+.beles-kis-kartya {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgba(214, 131, 7, 0.7);
+    border-radius: 20px;
+    box-shadow: 
+        0 0 20px #533703,
+        0 0 40px #533703;
+    backdrop-filter: blur(2px);
+    
+
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Egy kis interaktív lebegő effekt, ha ráviszik az egeret */
+.beles-kis-kartya:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px #775007;
+}
+
+/* A kártyák tetején lévő képek szabályozása */
+.kis-kartya-kep {
+    width: 100%;
+    height: 200px; /* Fix magasság, így a 3 kép tökéletesen egy vonalba kerül */
+    object-fit: cover; /* Levágja a képek szélét torzítás nélkül, ha nem egyforma az arányuk */
+    border-bottom: 5px solid #442d03; /* A sötétbarna keret a kép aljára */
+}
+
+/* A szöveges rész a kártyán belül */
+.kis-kartya-szoveg {
+    padding: 20px;
+    text-align: center;
+    color: #775007; /* Ugyanaz a sötétbarna szín, mint a nagy kártyánál */
+    flex-grow: 1;
+}
+
+.kis-kartya-szoveg h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.kis-kartya-szoveg p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
 
 /* rántott hús cuccaim */
 
@@ -308,7 +362,6 @@ hr {
 .rantott_col {
     color: #103810;
 }
-
 
 /* welcome cucc */
 
@@ -372,6 +425,22 @@ hr {
     0% { transform: translate(-50%, -40%) scale(0.8); opacity: 0; }
     100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* easter egg */
 
